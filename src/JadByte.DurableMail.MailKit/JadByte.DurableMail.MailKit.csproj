@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>JadByte.DurableMail.MailKit</PackageId>
+    <AssemblyName>JadByte.DurableMail.MailKit</AssemblyName>
+    <RootNamespace>JadByte.DurableMail.MailKit</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MailKit" />
+    <ProjectReference Include="../JadByte.DurableMail/JadByte.DurableMail.csproj" />
+    <InternalsVisibleTo Include="JadByte.DurableMail.MailKit.Tests" />
+  </ItemGroup>
+</Project>
+
