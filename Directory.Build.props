@@ -1,0 +1,23 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <GenerateDocumentationFile Condition="'$(MSBuildProjectName.EndsWith(`Tests`))' != 'true' and '$(MSBuildProjectName.Contains(`Sample`))' != 'true'">true</GenerateDocumentationFile>
+    <Deterministic>true</Deterministic>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(MSBuildProjectName.StartsWith(`JadByte.DurableMail`))' == 'true' and '$(MSBuildProjectName.EndsWith(`Tests`))' != 'true' and '$(MSBuildProjectName.Contains(`Sample`))' != 'true'">
+    <Authors>JadByte</Authors>
+    <Description>Durable, retryable email delivery for .NET without a permanent background worker.</Description>
+    <PackageTags>email;durable;retry;queue;dotnet;aspnetcore;entityframeworkcore</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(IsPackable)' == 'true'">
+    <None Include="$(MSBuildThisFileDirectory)README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+</Project>
