@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>JadByte.DurableMail.AspNetCore</PackageId>
+    <AssemblyName>JadByte.DurableMail.AspNetCore</AssemblyName>
+    <RootNamespace>JadByte.DurableMail.AspNetCore</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../JadByte.DurableMail/JadByte.DurableMail.csproj" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <InternalsVisibleTo Include="JadByte.DurableMail.AspNetCore.Tests" />
+  </ItemGroup>
+</Project>
+
