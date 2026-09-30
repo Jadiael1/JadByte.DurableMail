@@ -1,0 +1,17 @@
+**/bin/
+**/obj/
+.vs/
+.idea/
+TestResults/
+artifacts/
+*.user
+*.suo
+*.db
+*.db-shm
+*.db-wal
+*.nupkg
+*.snupkg
+appsettings.Local.json
+ingest.py
+digest.txt
+**/.venv/
