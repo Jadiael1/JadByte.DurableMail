@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>JadByte.DurableMail</PackageId>
+    <AssemblyName>JadByte.DurableMail</AssemblyName>
+    <RootNamespace>JadByte.DurableMail</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Options" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" />
+
+    <InternalsVisibleTo Include="JadByte.DurableMail.Tests" />
+    <InternalsVisibleTo Include="JadByte.DurableMail.AspNetCore" />
+    <InternalsVisibleTo Include="JadByte.DurableMail.AspNetCore.Tests" />
+  </ItemGroup>
+</Project>
+
