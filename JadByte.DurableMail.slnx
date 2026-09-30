@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/JadByte.DurableMail/JadByte.DurableMail.csproj" />
+    <Project Path="src/JadByte.DurableMail.EntityFrameworkCore/JadByte.DurableMail.EntityFrameworkCore.csproj" />
+    <Project Path="src/JadByte.DurableMail.AspNetCore/JadByte.DurableMail.AspNetCore.csproj" />
+    <Project Path="src/JadByte.DurableMail.MailKit/JadByte.DurableMail.MailKit.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/JadByte.DurableMail.Tests/JadByte.DurableMail.Tests.csproj" />
+    <Project Path="tests/JadByte.DurableMail.EntityFrameworkCore.Tests/JadByte.DurableMail.EntityFrameworkCore.Tests.csproj" />
+    <Project Path="tests/JadByte.DurableMail.AspNetCore.Tests/JadByte.DurableMail.AspNetCore.Tests.csproj" />
+    <Project Path="tests/JadByte.DurableMail.MailKit.Tests/JadByte.DurableMail.MailKit.Tests.csproj" />
+  </Folder>
+</Solution>
