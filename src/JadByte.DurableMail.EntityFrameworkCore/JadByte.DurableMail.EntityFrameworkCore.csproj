@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>JadByte.DurableMail.EntityFrameworkCore</PackageId>
+    <AssemblyName>JadByte.DurableMail.EntityFrameworkCore</AssemblyName>
+    <RootNamespace>JadByte.DurableMail.EntityFrameworkCore</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" />
+    <ProjectReference Include="../JadByte.DurableMail/JadByte.DurableMail.csproj" />
+    <InternalsVisibleTo Include="JadByte.DurableMail.EntityFrameworkCore.Tests" />
+  </ItemGroup>
+</Project>
+
